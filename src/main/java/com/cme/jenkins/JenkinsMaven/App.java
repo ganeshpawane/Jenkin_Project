@@ -11,4 +11,9 @@ public class App
     {
         System.out.println( "Hello World!" );
     }
+    
+    public int addition()
+    {
+    	return (15+10);
+    }
 }
