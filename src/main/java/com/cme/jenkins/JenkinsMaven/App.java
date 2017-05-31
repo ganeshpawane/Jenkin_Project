@@ -14,6 +14,6 @@ public class App
     
     public int addition()
     {
-    	return (15+10);
+    	return (10+10);
     }
 }
