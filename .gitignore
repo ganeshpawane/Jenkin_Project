@@ -4,3 +4,9 @@ target/
 .project
 .settings/
 
+<<<<<<< HEAD
+=======
+# Maven
+log/
+target/
+>>>>>>> b7b32b8900880ac1b06edf8e45be2c6c270b636f
