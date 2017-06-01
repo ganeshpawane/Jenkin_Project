@@ -1,9 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('Test') {
+        stage('Build') {
             steps {
-                sh 'echo "Fail!"; exit 0'
+                sh 'echo "Maven Clean";'
+                sh 'clean compile package'
+                sh 'echo "Build successfully from JenkinsFile";'
             }
         }
     }
