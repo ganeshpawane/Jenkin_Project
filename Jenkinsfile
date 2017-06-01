@@ -16,6 +16,7 @@ pipeline {
         }
         success {
             echo 'This will run only if successful'
+            sh "java java -cp target/JenkinsMaven-0.0.1-SNAPSHOT.jar com.cme.jenkins.JenkinsMaven.App"
         }
         failure {
             echo 'This will run only if failed'
