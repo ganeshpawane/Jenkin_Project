@@ -1,9 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('Test') {
+        stage('Build') {
             steps {
-                sh 'echo "Fail!"; exit 0'
+                echo "Beginning....."
+                sh "ls"
+                sh "pwd"
+                sh 'mvn -Dmaven.test.failure.ignore clean compile package'
             }
         }
     }
@@ -13,6 +16,7 @@ pipeline {
         }
         success {
             echo 'This will run only if successful'
+            sh "java -cp target/JenkinsMaven-0.0.1-SNAPSHOT.jar com.cme.jenkins.JenkinsMaven.App"
         }
         failure {
             echo 'This will run only if failed'
