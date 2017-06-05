@@ -6,7 +6,7 @@ pipeline {
                 echo "Beginning....."
                 sh "ls"
                 sh "pwd"
-                sh 'mvn -Dmaven.test.failure.ignore clean compile package'
+                sh 'mvnsd -Dmaven.test.failure.ignore clean compile package'
             }
         }
     }
