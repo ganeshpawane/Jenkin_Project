@@ -12,21 +12,20 @@ pipeline {
     }
     post {
         always {
-            echo 'This will always run'
+            echo 'In always block---------->> This will always run'
         }
         success {
-            echo 'This will run only if successful'
+            echo 'In success block--------->> This will run only if successful'
             sh "java -cp target/JenkinsMaven-0.0.1-SNAPSHOT.jar com.cme.jenkins.JenkinsMaven.App"
         }
         failure {
-            echo 'This will run only if failed'
+            echo 'In failure block--------->> This will run only if failed'
         }
         unstable {
-            echo 'This will run only if the run was marked as unstable'
+            echo 'In unstable block-------->> This will run only if the run was marked as unstable'
         }
         changed {
-            echo 'This will run only if the state of the Pipeline has changed'
-            echo 'For example, if the Pipeline was previously failing but is now successful'
+            echo 'In Changed Block------->> This will run only if the state of the Pipeline has changed For example, if the Pipeline was previously failing but is now successful'
         }
     }
 }
