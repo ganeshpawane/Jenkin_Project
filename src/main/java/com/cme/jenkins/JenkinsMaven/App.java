@@ -5,7 +5,7 @@ public class App
     public static void main( String[] args )
     {
     	App app = new App();
-        System.out.println( "Project Build Successfully" );
+        System.out.println( "Build Successfully" );
         System.out.println("Addition is : " + app.addition());
     }
     
