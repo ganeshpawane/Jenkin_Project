@@ -6,7 +6,7 @@ pipeline {
                 echo "Beginning....."
                 sh "ls"
                 sh "pwd"
-                sh 'mvn clean compile package deploy'
+                sh 'mvn clean deploy'
             }
         }
     }
