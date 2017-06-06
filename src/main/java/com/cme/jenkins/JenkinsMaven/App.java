@@ -5,13 +5,12 @@ public class App
     public static void main( String[] args )
     {
     	App app = new App();
-        System.out.println( "Build Successfully" );
         System.out.println("Addition is : " + app.addition());
     }
     
     public int addition()
     {
-    	return (20+10);
+    	return (10+10);
     }
 }
  
