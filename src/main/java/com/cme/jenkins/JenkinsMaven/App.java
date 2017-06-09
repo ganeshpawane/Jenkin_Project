@@ -6,8 +6,7 @@ public class App
     {
     	App app = new App();
         System.out.println("Addition is : " + app.addition());
-    }
-    
+    }    
     public int addition()
     {
     	return (10+10);
