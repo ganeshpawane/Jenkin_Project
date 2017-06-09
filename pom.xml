@@ -25,11 +25,11 @@
 			<name>AWS Release Repository</name>
 			<url>s3://ganesh-jenkins-test/release</url>
 		</repository>
-		<!-- <snapshotRepository>
+		<snapshotRepository>
 			<id>aws-snapshot</id>
 			<name>AWS Snapshot Repository</name>
 			<url>s3://ganesh-jenkins-test/snapshot</url>
-		</snapshotRepository> -->
+		</snapshotRepository>
 	</distributionManagement>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
